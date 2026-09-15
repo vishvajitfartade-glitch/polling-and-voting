@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PollVote - Polling & Voting App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🗳️ PollVote</div>
+        <p>Polling & Voting App</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Create Poll -->
+        <section class="create-card">
+            <h2>Create a New Poll</h2>
+
+            <input
+                type="text"
+                id="pollQuestion"
+                placeholder="Enter your poll question..."
+            >
+
+            <div id="optionsContainer">
+                <input type="text" class="poll-option" placeholder="Option 1">
+                <input type="text" class="poll-option" placeholder="Option 2">
+            </div>
+
+            <div class="button-row">
+                <button id="addOptionBtn" class="secondary-btn">
+                    + Add Option
+                </button>
+
+                <button id="createPollBtn" class="primary-btn">
+                    Create Poll
+                </button>
+            </div>
+
+            <p id="message"></p>
+        </section>
+
+        <!-- Polls -->
+        <section>
+            <div class="section-title">
+                <h2>Available Polls</h2>
+                <span id="pollCount">0 Polls</span>
+            </div>
+
+            <div id="pollsContainer"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 PollVote | Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
